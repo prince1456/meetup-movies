@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 import { Container, Content, Header, Item, Input, Icon, Button } from 'native-base';
 import axios from 'axios';
+import Cards from '../Components/Cards'
 
 export default class Search extends Component {
     state= {
