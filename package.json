@@ -1,0 +1,18 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "@expo/vector-icons": "^6.3.1",
+    "axios": "^0.18.0",
+    "expo": "^25.0.0",
+    "imdb-api": "^3.1.2",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0",
+    "native-base": "^2.3.10",
+    "react": "16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react-native-indicators": "^0.12.0",
+    "react-native-parallax-scroll-view": "^0.21.0",
+    "react-navigation": "^1.5.8"
+  }
+}
