@@ -17,6 +17,7 @@ export default class TopRate extends Component {
             )
     }
     _keyExtractor = item => item.id
+    
     _renderItem = ({item}) => {
         return <Cards movie={item} key={item.id} />
     }

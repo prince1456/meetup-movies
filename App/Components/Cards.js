@@ -9,7 +9,7 @@ export default class Cards extends Component {
             <Card>
             <CardItem>
               <Left>
-                <Thumbnail source={{uri: 'Image URL'}} />
+                <Thumbnail source={{uri: `https://image.tmdb.org/t/p/w500/${item.poster_path}`}} />
                 <Body>
                   <Text>{movie.title}</Text>
                   <Text note>{movie.original_title}</Text>
@@ -17,7 +17,7 @@ export default class Cards extends Component {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
+              <Image source={{uri: `https://image.tmdb.org/t/p/w500/${item.poster_path}`}} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
