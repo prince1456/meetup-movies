@@ -4,14 +4,15 @@ import { Image } from 'react-native'
 
 export default class Cards extends Component {
     render() {
+        const { movie } = this.props;
         return (
             <Card>
             <CardItem>
               <Left>
                 <Thumbnail source={{uri: 'Image URL'}} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text>{movie.title}</Text>
+                  <Text note>{movie.original_title}</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -22,17 +23,17 @@ export default class Cards extends Component {
               <Left>
                 <Button transparent>
                   <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
+                  <Text>{movie.vote_count}</Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
                   <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
+                  <Text>{movie.vote_average}</Text>
                 </Button>
               </Body>
               <Right>
-                <Text>11h ago</Text>
+                <Text>{movie.release_date}</Text>
               </Right>
             </CardItem>
           </Card>
