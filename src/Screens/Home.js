@@ -17,7 +17,7 @@ export default class Home extends Component {
     componentDidMount(){
         axios({
             method: 'GET',
-            url: "https://api.themoviedb.org/3/movie/top_rated?api_key=936564fe71e66aa13d11090a2555b5cb&language=en-US&page=1",
+            url: "https://api.themoviedb.org/3/movie/top_rated?api_key=asfsas66aa13d11090a2555b5cb&language=en-US&page=1",
             maxContentLength: 2,            
         })
         .then(res => {

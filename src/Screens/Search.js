@@ -18,7 +18,7 @@ export default class Search extends Component {
         console.log(text)
         axios({
             method: 'GET',
-            url: `https://api.themoviedb.org/3/search/movie?api_key=936564fe71e66aa13d11090a2555b5cb&language=en-US&query=${text}&page=1&include_adult=false`
+            url: `https://api.themoviedb.org/3/search/movie?api_key=9e=en-US&query=${text}&page=1&include_adult=false`
         })
         .then(({data}) => this.setState({movies: data.results, spiner: false}))
     }

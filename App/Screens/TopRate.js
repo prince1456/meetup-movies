@@ -10,14 +10,14 @@ export default class TopRate extends Component {
     componentDidMount(){
         axios({
             method: "GET",
-            url: "https://api.themoviedb.org/3/movie/top_rated?api_key=936564fe71e66aa13d11090a2555b5cb&language=en-US&page=1",
+            url: "https://api.themoviedb.org/3/movie/top_rated?api_key="yourkey"&language=en-US&page=1",
         })
             .then(({ data }) => 
                 this.setState({movies: data.results }) 
             )
     }
     _keyExtractor = item => item.id
-    
+
     _renderItem = ({item}) => {
         return <Cards movie={item} key={item.id} />
     }
